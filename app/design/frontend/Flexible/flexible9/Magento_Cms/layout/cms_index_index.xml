@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.top">
+			<block class="Plazathemes\Bannerslider\Block\Bannerslider" name="Banner" template="bannerslider.phtml"/>	
+        </referenceContainer>
+		<referenceContainer name="main.content">  
+			
+			<block class="Magento\Framework\View\Element\Template" name="block_group" template="Magento_Cms::block_group.phtml"  display="false" /> 
+			
+			 <block class="Plazathemes\Categorytop\Block\Categorytop" name="categorytop" template="categorytop.phtml" after="block_group" display="false" />
+			 
+			 <block class="Plazathemes\Producttab\Block\Producttab" name="producttab" template="producttab.phtml" after="block_group" display="false" />
+			 
+			
+			<block class="Plazathemes\Blog\Block\Sidebar\Recent" name="blog.sidebar.recent" template="sidebar/slider.phtml" display="false"/>
+			<block class="Magento\Cms\Block\Block" name="static_home1" after="categorytop" display="false">
+				<arguments>
+					<argument name="block_id" xsi:type="string">static_home1</argument>
+				</arguments>
+			</block>
+			
+			<block class="Plazathemes\Brandslider\Block\Brandslider" name="Brand" template="brandslider.phtml" display="false"/> 
+		
+			
+			<block class="Magento\Cms\Block\Block" name="Static_footer" after="-">
+				<arguments>
+					<argument name="block_id" xsi:type="string">Static_footer</argument>
+				</arguments>
+			</block>
+
+
+		</referenceContainer> 
+    </body>
+</page>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+		<referenceContainer name="header.box">
+            <block class="Plazathemes\Layout\Block\Layout" name="lucian_header" template="html/header.phtml" before="-">
+				
+				<block class="Magento\Cms\Block\Block" name="st_home9">
+					<arguments>
+						<argument name="block_id" xsi:type="string">st_home9</argument>
+					</arguments>
+				</block>
+				
+				<block class="Magento\Cms\Block\Block" name="right_category_home9">
+					<arguments>
+						<argument name="block_id" xsi:type="string">right_category_home9</argument>
+					</arguments>
+				</block>
+
+				<referenceContainer name="main.content">
+				   <block class="Plazathemes\Brandslider\Block\Brandslider" name="Brand" after="-" template="brandslider.phtml"/>
+				</referenceContainer>
+				
+				<block class="Magento\Cms\Block\Block" name="header_social">
+					<arguments>
+						<argument name="block_id" xsi:type="string">header_social</argument>
+					</arguments>
+				</block>
+                <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml" />
+				<block class="Plazathemes\Hozmegamenu\Block\Menu" name="mobilemenu" template="mobilemenu.phtml"  as='mobilemenu' />
+				<block class="Plazathemes\Hozmegamenu\Block\Menu" name="verticalmegamenu" template="verticalmegamenu.phtml"  as='verticalmegamenu_top' />
+				<block class="Magento\Store\Block\Switcher" name="store_language_mobile" as="store_language_mobile" template="switch/languages_mobile.phtml"/>
+				<block class="Magento\Directory\Block\Currency" name="currency_mobile" as="currency_mobile" template="currency_mobile.phtml" />
+				<block class="Magento\Checkout\Block\Cart\Sidebar" name="cartmobile" as="cartmobile" after="logo" template="cart/cartmobile.phtml" />
+				<block class="Magento\Customer\Block\Account\Customer" name="customermobile" template="account/customermobile.phtml" before="-"/>
+            </block> 
+        </referenceContainer>
+		<move element="navigation.sections" destination="lucian_header"/>
+		<move element="logo" destination="lucian_header"/>
+		<move element="top.search" destination="lucian_header"/>
+		<move element="store_language" destination="lucian_header"/>
+		<move element="currency" destination="lucian_header"/>
+		<move element="skip_to_content" destination="lucian_header"/>
+		<move element="minicart" destination="lucian_header"/>
+
+		<referenceContainer name="header.container" remove="1"/>
+		<referenceContainer name="header.panel" remove="1"/>
+		<referenceContainer name="header-wrapper" remove="1"/>
+		
+		<!-- <referenceContainer name="col.left">
+			<block class="Magento\Cms\Block\Block" name="banner_left">
+				<arguments>
+					<argument name="block_id" xsi:type="string">banner_left</argument>
+				</arguments>
+			</block>
+		</referenceContainer> -->
+		
+		<referenceContainer name="footer.box">
+            <block class="Plazathemes\Layout\Block\Layout" name="footer_block" template="html/footer.phtml">
+               <block class="Magento\Store\Block\Switcher" name="footer.store_switcher" as="store_switcher" template="switch/stores.phtml"/>
+                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="subscribe.phtml"/>
+				<block class="Magento\Cms\Block\Block" name="header_social1">
+					<arguments>
+						<argument name="block_id" xsi:type="string">header_social</argument>
+					</arguments>
+				</block>
+				
+				<block class="Magento\Cms\Block\Block" name="footer_static">
+					<arguments>
+						<argument name="block_id" xsi:type="string">footer_static</argument>
+					</arguments>
+				</block>
+				<container name="footer.copyright" label="footer copyright" htmlTag="div" htmlClass="footer-copyright"> 
+			       <block class="Magento\Theme\Block\Html\Footer" name="my-copyright" template="html/copyright.phtml"/> 
+			    </container> 
+				<block class="Magento\Cms\Block\Block" name="footer_payment">
+					<arguments>
+						<argument name="block_id" xsi:type="string">footer_payment</argument>
+					</arguments>
+				</block>
+            </block>
+        </referenceContainer>
+		<referenceBlock name="report.bugs" remove="1"/>
+		<referenceBlock name="footer_links" remove="1"/>
+    </body>
+</page>

@@ -1,0 +1,21 @@
+<div class="banner home-group">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Recentproductslider\Block\Products')->setTemplate('productslider.phtml')->toHtml();?>	
+				
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('bestsellerproduct.phtml')->toHtml();?>
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Saleproductslider\Block\Saleproductslider')->setTemplate('saleproductslider.phtml')->toHtml();?> 
+				
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Randomproductslider\Block\Products')->setTemplate('productslider.phtml')->toHtml();?>	
+			</div>
+		</div>
+	</div>	
+</div>

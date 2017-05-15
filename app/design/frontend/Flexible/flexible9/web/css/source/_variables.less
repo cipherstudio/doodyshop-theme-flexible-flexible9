@@ -1,0 +1,134 @@
+@headerbg: #fff;
+@bordercolor: #d0d0d0;
+@linkcolor: #4e4e4e;
+@backgroundcolor:#fff;
+@headingcolor: #5a5a5a;
+@footerbg: #212121;
+@hoverlinks:#d9121f;
+@hoverbackgroundlinks:#d9121f;
+@textmenu:#363636;
+@primarycolor: #00aeef;
+@textcolor:#555555;
+@menucolor: #333333;
+@bordercolor: #e5e5e5;
+@background-color:#363636;
+@general_new_label_color:#f77b24;
+@general_sale_label_color:#00aeef;
+@color_links:#999;
+@color-banner:#fff;
+@boder_color_header:#e9e9e9;
+@hovercolor:#d9121f;
+@boder-menu:#dedede;
+@color-menu:#d9121f;
+@hover-color-menu:#00aeef;
+@backgroud-menu:#f3f3f3;
+@footerbg: #84a014;
+@footercolor:#666666;
+@footerlinkhovercolor:#00aeef;
+//  Fonts
+@font-family-name__base: 'Open Sans';
+@font-family__sans-serif: 'Open Sans';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+//
+//  Sidebar
+//  ---------------------------------------------
+@color-white-smoke:fff;
+@color-gray56:gray;
+@sidebar__background-color: @color-white-smoke;  // Used in cart sidebar, Checkout sidebar, Tier Prices, My account navigation, Rating block background
+
+@copyright__background-color: @color-gray56;
+
+.buttonMixin() {
+	background: #5d5d5d; 
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;  
+	text-shadow: none; 
+	white-space: nowrap;
+	line-height: 49px;
+	letter-spacing: 2px;
+    padding: 0 28px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700; 
+
+    .transition();
+    
+	
+	&:hover {
+		background: @primarycolor; 
+		border: 0; 
+		text-shadow: none;
+		color: #fff;
+	}
+}
+.noneTextSelect() {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */      
+}
+
+.transition (@transition: 0.4s) {
+	-webkit-transition: all @transition ease-out;  
+	-moz-transition:    all @transition ease-out;
+	-ms-transition:     all @transition ease-out; 
+	-o-transition:      all @transition ease-out;  
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.scaleY (@factor) {
+	-webkit-transform: scaleY(@factor);
+	-moz-transform: 	 scaleY(@factor);
+	-ms-transform: 		 scaleYscaleY(@factor);
+	-o-transform: 		 scaleY(@factor);
+}
+.opacity (@opacity) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.translate (@x, @y:0) {
+	transform:   translate(@x, @y);
+	-webkit-transform:   translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+
+.bg_gradient (@bottom, @left) {
+	background: linear-gradient(bottom left, @bottom, @left);
+    background: -webkit-linear-gradient(bottom left, @bottom, @left);
+    background: -moz-linear-gradient(bottom left, @bottom, @left);
+    background: -o-linear-gradient(bottom left, @bottom, @left); 
+}
+
+@-webkit-keyframes bounceIn{
+
+	0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+	}
+	
+@keyframes bounceIn{
+	
+	0%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+}
+	
+	.bounceIn {-webkit-animation-name:bounceIn;animation-name:bounceIn }
