@@ -4,6 +4,16 @@
 	$items = $block->getItemsActive();
 	$itemsActive = json_decode($items); 
 	$htmlLink = array();
+        
+        // @fixed
+        // @author rathasit.j@cipher.co.th
+        $type_menu = $block->getConfig('type_menu');
+        if ($type_menu != 1) {
+            return;
+        }
+        
+        
+        
 ?>
 
 

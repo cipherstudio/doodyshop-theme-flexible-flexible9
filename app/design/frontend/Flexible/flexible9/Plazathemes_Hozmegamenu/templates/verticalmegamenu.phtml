@@ -117,7 +117,10 @@
 			}
 			
 		})
-			
+                
+                // @fixed
+                .trigger('click');
+            
 		$('.pt_menu').hover(function(){
 			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideDown('slow');
 			if(VMEGAMENU_POPUP_EFFECT == 1) $(this).find('.popup').stop(true,true).fadeIn('slow');
@@ -126,7 +129,7 @@
 			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideUp('fast');
 			if(VMEGAMENU_POPUP_EFFECT == 1) $(this).find('.popup').stop(true,true).fadeOut('fast');
 			if(VMEGAMENU_POPUP_EFFECT == 2) $(this).find('.popup').stop(true,true).hide('fast');
-		})
+		});
 		
 		
 	});
