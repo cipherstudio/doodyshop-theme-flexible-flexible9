@@ -1,0 +1,75 @@
+title,identifier,content,is_active
+st home9,st_home9,"<div class=""links-menu"">
+						<ul class=""links"">
+						<li><a href=""{{store url=""blog""}}"">Blog</a></li>
+						<li><a href=""{{store url=""contact""}}"">Contact Us</a></li>
+						<li><a href=""{{store direct_url=""customer-service""}}"">customer Service</a></li>
+						<li><a class=""oder1"" href=""{{store direct_url=""sales/order/history/""}}"">Order status</a></li>
+						</ul>
+						</div>",1
+static top home9,static_top_home9,"<div class=""static-category category-static-home9"">
+						<div class=""row"">
+						<div class=""col-md-8 col-sm-12 col-xs-12"">
+						<div class=""box-inner box1"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/img1-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						</div>
+						<div class=""col-md-4 col-sm-12 col-xs-12"">
+						<div class=""box-inner box2"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/img2-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>",1
+free shipping home9,free_shipping_home9,"<div class=""free-shipping-home"">
+						<div class=""row"">
+						<div class=""col-md-4 col-sm-12 col-xs-12 box box1"">
+						<div class=""box-inner bos1"">
+						<div class=""truck icon""><a class=""fa fa-truck""><span>auto</span></a></div>
+						<div class=""text"">
+						<h4>Free shipping worldwide</h4>
+						<p>On order over $200</p>
+						</div>
+						</div>
+						</div>
+						<div class=""col-md-4 col-sm-12 col-xs-12 box box2"">
+						<div class=""box-inner bos2"">
+						<div class=""loats icon""><a class=""fa fa-rotate-left""><span>loats</span></a></div>
+						<div class=""text"">
+						<h4>30 days free return</h4>
+						<p>Money back guarantee</p>
+						</div>
+						</div>
+						</div>
+						<div class=""col-md-4 col-sm-12 col-xs-12 box box3"">
+						<div class=""box-inner bos3"">
+						<div class=""like icon""><a class=""fa fa-thumbs-o-up""><span>like</span></a></div>
+						<div class=""text"">
+						<h4>Member safe shopping</h4>
+						<p>Safe shopping guarantee</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>",1
+right category home9,right_category_home9,"<div class=""static-category right-home9-category"">
+						<div class=""box-inner box1"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/rigt1-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						<div class=""box-inner box2"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/img10-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						<div class=""box-inner box3"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/img11-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						<div class=""box-inner box4"">
+						<div class=""img img1""><a href=""#""><img src=""{{media url=""wysiwyg/right3-home9.jpg""}}"" alt="""" /></a></div>
+						</div>
+						</div>",1
+center home9 home,center-home9-home,"<div class=""static-category center-home9-category"">
+						<div class=""box-inner box1"">
+						<div class=""img img1"">
+						<a href=""#""><img src=""{{media url=""wysiwyg/static-home9.jpg""}}"" alt="""" /></a>
+						</div>
+						</div>
+						</div>",1
