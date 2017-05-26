@@ -1,0 +1,6 @@
+section,group,field,value
+pricecountdown,general,enabled,1
+pricecountdown,countdown_slider,item_default,1
+bestsellerproduct,new_status,enabled,1
+bestsellerproduct,new_status,row,1
+bestsellerproduct,new_status,itemsDefault,4
