@@ -35,13 +35,14 @@
     $row_number         = $slider_options['row_number'];
     $show_navigation    = $slider_options['show_navigation'];
     $show_pagination    = $slider_options['show_pagination'];
+
 ?>
 <?php if($enable): ?>
     <?php
         $_productCollection = $block->getSaleProducts();
         $imageDefine = 'new_products_content_widget_grid';
         $reviewType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
-		$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
+        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     ?>
 	
 
@@ -155,8 +156,8 @@
 													<span class='sec'><?php // echo __('S') ?></span>
 												</div>
 											</div>
-                                                                                        <div id="caption<?php echo $_product->getId(); ?>" style="display:none"></div>
-                                                                                        <div id="heading<?php echo $_product->getId(); ?>" style="display:none"></div>
+											<div id="caption<?php echo $_product->getId(); ?>" style="display:none"></div>
+											<div id="heading<?php echo $_product->getId(); ?>" style="display:none"></div>
 										<?php endif; ?>
 									<?php endif; ?>
 								</div>
@@ -231,8 +232,6 @@
 
                     var iid<?php echo $_product->getId(); ?> = "countbox-<?php echo $_product->getId(); ?>";
                     
-                    console.log(document.getElementById("countbox-<?php echo $_product->getId(); ?>"), "countbox-<?php echo $_product->getId(); ?>");
-					
                     CountBack_slider(gsecs<?php echo $_product->getId(); ?>,"countbox-<?php echo $_product->getId(); ?>", <?php echo $_product->getId(); ?>);
                 </script>
             <?php endif; ?>
