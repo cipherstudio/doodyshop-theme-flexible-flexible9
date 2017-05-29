@@ -1,4 +1,4 @@
-title,identifier,page_layout,content,page_default,is_active
+title,identifier,page_layout,content,page_default,categorytab_multiple,is_active
 Flexible9 Miscellaneous Responsive magento,flexible9-miscellaneous-responsive-magento,1column,"				<div>
 				<div class=""gruod-inner"">
 				<div class=""row"">
@@ -12,4 +12,4 @@ Flexible9 Miscellaneous Responsive magento,flexible9-miscellaneous-responsive-ma
 				<div class=""category3 category-home9"">{{widget type=""Plazathemes\Categorytab\Block\CateWidget"" title=""Furniture"" identify=""furniture"" category_id=""310,329,331,333,335,337"" items_default=""3"" items_desktop=""2"" items_desktop_small=""3"" items_tablet=""2"" items_mobile=""1"" show_addtocart=""1"" show_wishlist=""1"" show_compare=""1"" row_show=""1"" template=""categorytab/grid.phtml""}}</div>
 				<div class=""category4 category-home9"">{{widget type=""Plazathemes\Categorytab\Block\CateWidget"" title=""Beauty"" identify=""beauty"" category_id=""312,318,320,323,325,328"" items_default=""3"" items_desktop=""2"" items_desktop_small=""3"" items_tablet=""2"" items_mobile=""1"" show_addtocart=""1"" show_wishlist=""1"" show_compare=""1"" row_show=""1"" template=""categorytab/grid.phtml""}}</div>
 				{{block class=""Plazathemes\Blog\Block\Sidebar\Recent"" name=""blog.sidebar.recent"" template=""sidebar/slider.phtml""}} {{block class=""Magento\\Cms\\Block\\Block"" block_id=""free_shipping_home9""}}</div>
-				<div>{{block class=""Plazathemes\Newsletterpopup\Block\Newsletterpopup"" name=""newsletterpopup"" template=""newsletterpopup.phtml"" }}</div>",cms_home_page,1
+				<div>{{block class=""Plazathemes\Newsletterpopup\Block\Newsletterpopup"" name=""newsletterpopup"" template=""newsletterpopup.phtml"" }}</div>",cms_home_page,1,1
