@@ -118,8 +118,9 @@
 			
 		})
                 
-                // @fixed
-                .trigger('click');
+		// @fixed
+		.trigger('click')
+		.siblings('.pt_menu').find('.pt_cate > .menu-thumb').hide();
             
 		$('.pt_menu').hover(function(){
 			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideDown('slow');
