@@ -119,8 +119,22 @@
 		})
                 
 		// @fixed
+		/* begin */
 		.trigger('click')
-		.siblings('.pt_menu').find('.pt_cate > .menu-thumb').hide();
+		.siblings('.pt_menu')
+			.find('.pt_cate > .menu-thumb')
+				.hide()
+			.end()
+		.siblings('#show_more').hide()
+		.parents('.verticalmenu-container')
+			.find('.megamenu-title')
+				.unbind('click')
+			.end();
+
+		// hide arrow 
+		$('<style>.verticalmenu-container .megamenu-title:before{content:"";}</style>').appendTo('head');
+
+		/* end */
             
 		$('.pt_menu').hover(function(){
 			if(VMEGAMENU_POPUP_EFFECT == 0) $(this).find('.popup').stop(true,true).slideDown('slow');
